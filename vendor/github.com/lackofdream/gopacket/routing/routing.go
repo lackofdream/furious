@@ -211,8 +211,8 @@ loop:
 	if err != nil {
 		return nil, err
 	}
-	for i, iface := range ifaces {
-		rtr.ifaces[iface.Index] iface
+	for _, iface := range ifaces {
+		rtr.ifaces[iface.Index] = iface
 		var addrs ipAddrs
 		ifaceAddrs, err := iface.Addrs()
 		if err != nil {
