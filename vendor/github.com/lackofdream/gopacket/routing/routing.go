@@ -103,9 +103,6 @@ func (r *router) RouteWithSrc(input net.HardwareAddr, src, dst net.IP) (iface *n
 		return
 	}
 
-	// Interfaces are 1-indexed, but we store them in a 0-indexed array.
-	ifaceIndex--
-
 	iface = &r.ifaces[ifaceIndex]
 	if preferredSrc == nil {
 		switch {
@@ -150,7 +147,7 @@ func (r *router) route(routes routeSlice, input net.HardwareAddr, src, dst net.I
 // long-running programs to call New() regularly to take into account any
 // changes to the routing table which have occurred since the last New() call.
 func New() (Router, error) {
-	rtr := &router{}
+	rtr := &router{ifaces: [1024]net.Interface{}}
 	tab, err := syscall.NetlinkRIB(syscall.RTM_GETROUTE, syscall.AF_UNSPEC)
 	if err != nil {
 		return nil, err

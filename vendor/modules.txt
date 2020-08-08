@@ -9,7 +9,7 @@ github.com/google/gopacket/pcap
 github.com/inconshreveable/mousetrap
 # github.com/konsorten/go-windows-terminal-sequences v1.0.1
 github.com/konsorten/go-windows-terminal-sequences
-# github.com/lackofdream/gopacket v1.1.18-lacko-3
+# github.com/lackofdream/gopacket v1.1.19-0.20200808235849-9b599b3eb8a1
 github.com/lackofdream/gopacket/routing
 # github.com/mostlygeek/arp v0.0.0-20170424181311-541a2129847a
 github.com/mostlygeek/arp
