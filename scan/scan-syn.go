@@ -100,7 +100,16 @@ func (s *SynScanner) getHwAddr(ip net.IP, gateway net.IP, srcIP net.IP, networkI
 		arpDst = gateway
 	}
 
-	handle, err := pcap.OpenLive(networkInterface.Name, 65536, true, pcap.BlockForever)
+	handleBuilder, err := pcap.NewInactiveHandle(networkInterface.Name)
+	if err != nil {
+		return nil, err
+	}
+	defer handleBuilder.CleanUp()
+	handleBuilder.SetImmediateMode(true)
+	handleBuilder.SetSnapLen(65536)
+	handleBuilder.SetPromisc(false)
+	handleBuilder.SetTimeout(pcap.BlockForever)
+	handle, err := handleBuilder.Activate()
 	if err != nil {
 		return nil, err
 	}
@@ -248,7 +257,16 @@ func (s *SynScanner) scanHost(job hostJob) (Result, error) {
 		return result, err
 	}
 
-	handle, err := pcap.OpenLive(networkInterface.Name, 65535, true, pcap.BlockForever)
+	handleBuilder, err := pcap.NewInactiveHandle(networkInterface.Name)
+	if err != nil {
+		return result, err
+	}
+	defer handleBuilder.CleanUp()
+	handleBuilder.SetImmediateMode(true)
+	handleBuilder.SetSnapLen(65536)
+	handleBuilder.SetPromisc(false)
+	handleBuilder.SetTimeout(pcap.BlockForever)
+	handle, err := handleBuilder.Activate()
 	if err != nil {
 		return result, err
 	}
