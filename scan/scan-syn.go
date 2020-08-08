@@ -12,7 +12,7 @@ import (
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/pcap"
-	"github.com/google/gopacket/routing"
+	"github.com/lackofdream/gopacket/routing"
 	"github.com/mostlygeek/arp"
 	"github.com/phayes/freeport"
 	"github.com/sirupsen/logrus"
