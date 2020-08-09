@@ -19,6 +19,8 @@ github.com/lackofdream/gopacket v1.1.19-0.20200808235849-9b599b3eb8a1 h1:nSenB7h
 github.com/lackofdream/gopacket v1.1.19-0.20200808235849-9b599b3eb8a1/go.mod h1:qJUYm3FF3yYSWckXYTBJK5FZ43mRxe8/f8LGCi6GKww=
 github.com/lackofdream/gopacket v1.1.19-0.20200809154627-3d5cbfd8315e h1:f94T2CNQYDCx5XrxTlf+H82hc2Cn0QodwB0jKHjOqog=
 github.com/lackofdream/gopacket v1.1.19-0.20200809154627-3d5cbfd8315e/go.mod h1:qJUYm3FF3yYSWckXYTBJK5FZ43mRxe8/f8LGCi6GKww=
+github.com/lackofdream/gopacket v1.1.19-0.20200809155327-8c3af3133d79 h1:FFhi/OFqBWFtBLQ8VCI/eY3FpAiyt345UjGA2cj6HsA=
+github.com/lackofdream/gopacket v1.1.19-0.20200809155327-8c3af3133d79/go.mod h1:qJUYm3FF3yYSWckXYTBJK5FZ43mRxe8/f8LGCi6GKww=
 github.com/magiconair/properties v1.8.0/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
 github.com/mitchellh/go-homedir v1.1.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
