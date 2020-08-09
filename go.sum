@@ -17,6 +17,8 @@ github.com/konsorten/go-windows-terminal-sequences v1.0.1 h1:mweAR1A6xJ3oS2pRaGi
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=
 github.com/lackofdream/gopacket v1.1.19-0.20200808235849-9b599b3eb8a1 h1:nSenB7h4Px9GE8yln7rm0mAq/JFrGs5486dl59Mw52g=
 github.com/lackofdream/gopacket v1.1.19-0.20200808235849-9b599b3eb8a1/go.mod h1:qJUYm3FF3yYSWckXYTBJK5FZ43mRxe8/f8LGCi6GKww=
+github.com/lackofdream/gopacket v1.1.19-0.20200809154627-3d5cbfd8315e h1:f94T2CNQYDCx5XrxTlf+H82hc2Cn0QodwB0jKHjOqog=
+github.com/lackofdream/gopacket v1.1.19-0.20200809154627-3d5cbfd8315e/go.mod h1:qJUYm3FF3yYSWckXYTBJK5FZ43mRxe8/f8LGCi6GKww=
 github.com/magiconair/properties v1.8.0/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
 github.com/mitchellh/go-homedir v1.1.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
